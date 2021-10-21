@@ -58,18 +58,14 @@
 - 프로젝트 댓글 작성, 삭제 기능 구현
 
 #### S3를 이용한 이미지 업로드
-AWS 정책생성기를 활용하여 객체에 대한 엑세스 권한을 제공하는 버킷 정책 작성 <업로드 관련 사항 정리>
-가상환경에 boto3, django-storages 설치
-이때 setting.py 의 INSTALLED_APP 에 'storages'추가
-파일과 텍스트를 multipart/form-data 형식으로 한번에 수신
-request.FILES 를 통해 파일을,
-request.POST 를 통해 텍스트를 수신
-전달받은 파일은 랜덤한 값을 붙여 S3로 저장
-전달받은 텍스트와 s3 에 저장한 파일의 url 을 테이블에 저장
-이미지 수정시 S3 서버에서 이미지 삭제
-
-#### 리팩토링 예정
-
+AWS 정책생성기를 활용하여 객체에 대한 엑세스 권한을 제공하는 버킷 정책 작성 <업로드 관련 사항 정리>  
+가상환경에 boto3, django-storages 설치  
+이때 setting.py 의 INSTALLED_APP 에 'storages'추가  
+파일과 텍스트를 multipart/form-data 형식으로 한번에 수신  
+request.FILES 를 통해 파일을, request.POST를 통해 텍스트를 수신   
+전달받은 파일은 랜덤한 uuid값을 붙여 S3로 저장  
+전달받은 텍스트와 s3 에 저장한 파일의 url 을 테이블에 저장  
+이미지 수정시 S3 서버에서 이미지 삭제  
 
 #### 데이터 입력 및 배포
 - RDS DB 통해 멤버 데이터베이스 일원화
