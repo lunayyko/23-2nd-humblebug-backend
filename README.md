@@ -1,9 +1,11 @@
 # 험블벅 (텀블벅 클론코딩)
 
+## ERD Table
+
+<img width="1196" alt="humblebug_erd" src="https://user-images.githubusercontent.com/8315252/138204067-0ca63e8f-277f-4ee6-9daf-ea17d6326f73.png">
+
+
 ## Tango Plate Project Family
-
-![Image from iOS](https://user-images.githubusercontent.com/8315252/131079623-28e4e6ff-aa57-46cd-a9ed-542c52a912ff.jpg)
-
 
 - F.E<br>
   [황도윤](https://github.com/tec-motive) : 할배도윤 / 본투비리더<br>
